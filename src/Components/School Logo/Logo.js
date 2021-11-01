@@ -4,7 +4,7 @@ import logo  from './logo.png';
 function Logo(){
     return(
         <div className="Container">
-            <img src={logo} className="image"></img>
+            <img src={logo} className="image" alt="LOGO"></img>
         </div>
     )
 }
