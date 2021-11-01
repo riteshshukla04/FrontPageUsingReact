@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 
 .App-logo {
@@ -34,5 +35,18 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.ButtonContainer{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 50px;
+  top: 10px;
+}
+@media print {
+  .ButtonContainer {
+    display: none;
   }
 }
