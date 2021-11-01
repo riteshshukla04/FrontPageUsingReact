@@ -36,7 +36,7 @@ const App=()=>{
     <div>
       <div className="ButtonContainer">
       <Button variant="outlined" onClick={handleClickOpen}>
-        Open form dialog
+        Change Form
       </Button>
       </div>
       
