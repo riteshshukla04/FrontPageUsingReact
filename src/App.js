@@ -17,7 +17,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 const App=()=>{
   const [open, setOpen] = React.useState(false);
-  const [name, setName] = React.useState("");
+  const [name, setName] = React.useState("RITESH");
   const [subject, setSubject] = React.useState("");
   const [roll, setRoll] = React.useState("");
   const [session,setSession] = React.useState("");
