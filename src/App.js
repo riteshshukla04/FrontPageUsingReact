@@ -141,8 +141,8 @@ const App=()=>{
       <FormControl component="fieldset">
             <FormLabel component="legend">Background</FormLabel>
             <RadioGroup row aria-label="gender" name="row-radio-buttons-group" onChange={(e)=>setOption(e.target.value)}>
-              <FormControlLabel value={0} control={<Radio />} label="Background 1" />
-              <FormControlLabel value={1} control={<Radio />} label="Background 2" />
+              <FormControlLabel value={"0"} control={<Radio />} label="Background 1" />
+              <FormControlLabel value={"1"} control={<Radio />} label="Background 2" />
               
            
             </RadioGroup>

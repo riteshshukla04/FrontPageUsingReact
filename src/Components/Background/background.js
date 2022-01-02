@@ -9,8 +9,11 @@ export default function Background(props){
     const style2={
         "background-image": `url('./Layer 1.png')`
     }
+    
     var Mainstyle=style2
-    if(props.option===0){
+    
+    if(props.option==="0"){
+        
         Mainstyle=style
     }
     else{
