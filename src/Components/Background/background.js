@@ -7,7 +7,7 @@ export default function Background(props){
        
     }
     const style2={
-        "background-image": `url('./Layer 1.png')`
+        "background-image": `url('https://firebasestorage.googleapis.com/v0/b/frontpagesjs.appspot.com/o/Layer%201.png?alt=media&token=d840af3e-58eb-434c-8f9f-c3eda2340973')`
     }
     
     var Mainstyle=style2

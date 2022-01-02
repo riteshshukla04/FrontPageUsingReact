@@ -13,7 +13,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.LoveContainer{
+  margin-left: 20px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -46,7 +48,7 @@
   top: 10px;
 }
 @media print {
-  .ButtonContainer {
+  .ButtonContainer,.LoveContainer {
     display: none;
   }
 }
