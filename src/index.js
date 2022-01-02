@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Background from './Components/Background/background';
+import { OptionContext, OptionProvider } from './Components/OptionContext';
+import { MainApp } from './mainapp';
+
+
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Background >
-      <App/>
-    </Background>
+    <OptionProvider>
+     <MainApp></MainApp>
+    </OptionProvider>
+    
     
   </React.StrictMode>,
   document.getElementById('root')

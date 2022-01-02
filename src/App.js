@@ -13,7 +13,16 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel'
 
+import { useContext } from "react"
+
+import Background from "./Components/Background/background"
+import { OptionContext } from "./Components/OptionContext"
 
 
 const App=()=>{
@@ -24,6 +33,8 @@ const App=()=>{
   const [session,setSession] = React.useState("");
   const [classes,setClass] = React.useState("");
   const [topic,setTopic] = React.useState("");
+  const [option,setOption]=useContext(OptionContext);
+
   const handleClickOpen = () => {
     setOpen(true);
 
@@ -129,6 +140,16 @@ const App=()=>{
             value={topic}
             onChange={e => setTopic(e.target.value)}
           />
+
+      <FormControl component="fieldset">
+            <FormLabel component="legend">Background</FormLabel>
+            <RadioGroup row aria-label="gender" name="row-radio-buttons-group" onChange={(e)=>setOption(e.target.value)}>
+              <FormControlLabel value={0} control={<Radio />} label="Background 1" />
+              <FormControlLabel value={1} control={<Radio />} label="Background 2" />
+              
+           
+            </RadioGroup>
+          </FormControl>
         </DialogContent>
         <DialogActions>
           
