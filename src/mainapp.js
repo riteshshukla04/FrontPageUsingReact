@@ -5,7 +5,8 @@ import { OptionContext } from "./Components/OptionContext"
 
 export const MainApp=()=>{
     const [option,setOption]=useContext(OptionContext);
-    console.log(option)
+    setOption(option);
+  
     return(
         <Background option={option}> 
             <App></App>
