@@ -13,9 +13,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import PropTypes from 'prop-types';
-import JsPdf from 'jspdf';
-import html2canvas from 'html2canvas';
+
 
 
 const App=()=>{
