@@ -18,10 +18,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel'
-
 import { useContext } from "react"
-
-import Background from "./Components/Background/background"
 import { OptionContext } from "./Components/OptionContext"
 
 
@@ -55,7 +52,7 @@ const App=()=>{
   await setOpen(false);
    window.print();
   }
-
+  console.log(option);
   return (
     <div id="App-Print">
       <div className="ButtonContainer">
