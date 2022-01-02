@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
-import Background from './Components/Background/background';
-import { OptionContext, OptionProvider } from './Components/OptionContext';
+
+import {OptionProvider } from './Components/OptionContext';
 import { MainApp } from './mainapp';
 
 
