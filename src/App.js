@@ -13,6 +13,9 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import PropTypes from 'prop-types';
+import JsPdf from 'jspdf';
+import html2canvas from 'html2canvas';
 
 
 const App=()=>{
@@ -28,12 +31,24 @@ const App=()=>{
 
   };
 
+
+  
   const handleClose = () => {
     setOpen(false);
   };
 
+ 
+
+
+
+  
+  const Print=async()=>{
+  await setOpen(false);
+   window.print();
+  }
+
   return (
-    <div>
+    <div id="App-Print">
       <div className="ButtonContainer">
       <Button variant="outlined" onClick={handleClickOpen}>
         Change Form
@@ -120,6 +135,7 @@ const App=()=>{
         <DialogActions>
           
           <Button onClick={handleClose}>Close</Button>
+          {<Button onClick={()=>Print()} >Print</Button>}
         </DialogActions>
       </Dialog>
       <Heading  name={subject}/>
