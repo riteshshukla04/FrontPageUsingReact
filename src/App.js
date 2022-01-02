@@ -58,7 +58,7 @@ const App=()=>{
   return (
     <div id="App-Print">
       <div className="LoveContainer"> 
-        Made with <AiFillHeart /> with Ritesh!!  
+        Made with <AiFillHeart /> by Ritesh!!  
       </div>
       <div className="ButtonContainer">
 
