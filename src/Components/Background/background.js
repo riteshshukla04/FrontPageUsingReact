@@ -9,12 +9,14 @@ export default function Background(props,option){
     const style2={
         "background-image": `url('./Layer 1.png')`
     }
-    const Mainstyle=style2
+    var Mainstyle=style2
    switch(option){
        case 0:
         Mainstyle=style
+        break
         case 1:
             Mainstyle=style2
+            break
    }
     return (
         <page style={Mainstyle}>
