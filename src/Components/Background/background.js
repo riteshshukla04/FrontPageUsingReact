@@ -12,10 +12,13 @@ export default function Background(props,option){
     var Mainstyle=style2
    switch(option){
        case 0:
-        Mainstyle=style
-        break
+            Mainstyle=style
+            break
         case 1:
             Mainstyle=style2
+            break
+        default:
+            Mainstyle=style
             break
    }
     return (
