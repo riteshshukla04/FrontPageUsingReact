@@ -40,7 +40,7 @@ body {
 page[size="A4"] {
   background-image: url('./Layer 1.png');
   width: 21cm;
-  height: 29.7cm;
+  height: 29.3cm;
   display: block;
   margin: 0 auto;
   margin-bottom: 0.5cm;
@@ -49,10 +49,21 @@ page[size="A4"] {
 }
 
   @media print {
-body {-webkit-print-color-adjust: exact;}
+    html, body {
+        height: 99%;    
+    }
+    body {-webkit-print-color-adjust: exact;}
 @page{
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
+@page :footer {
+        display: none
+    }
+  
+  @page :header {
+        display: none
+    }
 
 }
 
@@ -61,11 +72,10 @@ body {-webkit-print-color-adjust: exact;}
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <page size="A4" >
+    
       
       <div id="root"></div>
-    </page>
-    
+  
    
   </body>
 </html>
