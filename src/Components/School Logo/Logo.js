@@ -1,10 +1,10 @@
 import './Logo.css';
 import logo  from './logo.gif';
 
-function Logo(){
+function Logo(props){
     return(
         <div className="Container">
-            <img src={logo} className="image" alt="LOGO"></img>
+            <img src={props.url? props.url : logo} className="image" alt="LOGO"></img>
         </div>
     )
 }

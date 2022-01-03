@@ -33,6 +33,8 @@ const App=()=>{
   const [classes,setClass] = React.useState("");
   const [topic,setTopic] = React.useState("");
   const [option,setOption]=useContext(OptionContext);
+  const [url,setURL]=React.useState();
+
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -143,10 +145,14 @@ const App=()=>{
             value={topic}
             onChange={e => setTopic(e.target.value)}
           />
-
+            <FormControl component="fieldset">
+            <FormLabel component="legend">Choose Logo</FormLabel>
+            <input type="file" onChange={(e)=>setURL(URL.createObjectURL(e.target.files[0]))} />
+          </FormControl>
+       
       <FormControl component="fieldset">
             <FormLabel component="legend">Background</FormLabel>
-            <RadioGroup row aria-label="gender" name="row-radio-buttons-group" onChange={(e)=>setOption(e.target.value)}>
+            <RadioGroup row aria-label="gender" name="row-radio-buttons-group" onChange={(e)=>setOption(e.target.value)} defaultValue={1}>
               <FormControlLabel value={"0"} control={<Radio />} label="Background 1" />
               <FormControlLabel value={"1"} control={<Radio />} label="Background 2" />
               
@@ -161,7 +167,7 @@ const App=()=>{
         </DialogActions>
       </Dialog>
       <Heading  name={subject}/>
-      <Logo/>
+      <Logo url={url}/>
       <Topic topic={topic}/>
       <Intro name={name} roll={roll} classes={classes} session={session}/>
     </div>
